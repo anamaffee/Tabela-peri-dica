@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.atom {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* Adiciona perspectiva 3D */
+    perspective: 1000px; 
+}
+
+.nucleus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ff3f3f;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px #ff3f3f;
+}
+
+.electron-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* Animação de rotação */
+    animation: rotateOrbit linear infinite;
+}
+
+.electron {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #00d2ff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #00d2ff;
+}
+
+/* Velocidades diferentes para as órbitas */
+.orbit-1 { animation-duration: 2s; transform: rotateX(70deg) rotateY(0deg); }
+.orbit-2 { animation-duration: 3s; transform: rotateX(70deg) rotateY(60deg); }
+.orbit-3 { animation-duration: 4s; transform: rotateX(70deg) rotateY(-60deg); }
+
+@keyframes rotateOrbit {
+    from { transform: rotateX(70deg) rotateY(0deg); }
+    to { transform: rotateX(70deg) rotateY(360deg); }
+}

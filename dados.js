@@ -13,7 +13,7 @@ const colecaoElementos = [
     "grupo": "não metal",
     "corGrupo": "#00FF00",
     "raioIonico": "",
-    "energiaDeIonizacao": "1312",
+    "energiaDeIonizacao": "1312",   
     "pontoDeFusao": "14",
     "nome": "Hydrogen",
     "estadosDeOxidacao": "-1, 1",
