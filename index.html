@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela periódica - aninha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="atom.css">
 </head>
 <body>
      
     <div id="tabela-periodica"></div>
-   
-    <div id="modal">
-        <div class="modal-conteudo">
+
+      <!-- AQUI COMEÇA O MODAL-->
+
+<div id="modal">
+    <div class="modal-conteudo">
+        <div class="info-texto">
             <h2 id="modal-nome"></h2>
             <p id="modal-info"></p>
         </div>
+
+       <!-- AQUI COMEÇA O ATOMO-->
+
+        <div class="atom">
+            <div class="nucleus"></div>
+            <div class="electron-orbit orbit-1"><div class="electron"></div></div>
+            <div class="electron-orbit orbit-2"><div class="electron"></div></div>
+            <div class="electron-orbit orbit-3"><div class="electron"></div></div>
+        </div>
     </div>
-    <!-- AQUI COMEÇA A LEGENDA-->
+</div>
+     <!-- AQUI COMEÇA A LEGENDA-->
     <div id="legenda"></div>
 
+
+    <script src="./atom.js"></script>
     <script src="./dados.js"></script>
     <script src="./script.js"></script>
 </body>

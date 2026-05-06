@@ -29,27 +29,25 @@
 .card-elemento {
     overflow: hidden;
 }
-#modal{
-    display: none; 
-    position: fixed; 
-    top: 180px; left: 430px; 
-    width: 20%; 
-    height: 18%; 
-    justify-content: center; 
-    align-items: center;
-    z-index: 1000;
+#modal {
+    display: none;
+    position: absolute; 
+    top: 1%;         
+    left: 19%; 
     pointer-events: none;
 }
 .modal-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     background-color: rgb(214, 214, 214);
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    color: black; 
-    margin-top: -190px;
-    margin-left: -140px;
+    width: 450px; 
     pointer-events: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 #legenda{
     display: grid;
@@ -57,5 +55,26 @@
     gap:20px;
     grid-template-columns: repeat(5, 1fr); 
     margin-left: 60px;
+}
+.modal-conteudo {
+    display: flex;          
+    flex-direction: row;   
+    align-items: center;    
+    justify-content: center;
+    gap: 50px;             
+    padding: 20px;
+    min-width: 470px;   
+    padding: 15px 30px; 
+    height: auto;        
+    min-height: 200px;   
+    max-height: 80vh;    
+    width: fit-content;  
+}   
+.atom {
+    width: 80px;  
+    height: 80px;
+    position: relative;
+    flex-shrink: 0;
+    transform: scale(0.9);
 }
 
