@@ -32,7 +32,10 @@ function abrirModal(elemento) {
   const info = document.getElementById("modal-info");
 
   titulo.textContent = elemento.nome;
-  info.textContent = `Símbolo: ${elemento.simbolo} Massa: ${elemento.massaAtomica} Grupo: ${elemento.grupo}`;
+            info.innerHTML = `
+            Símbolo: ${elemento.simbolo} <br>
+            Massa: ${elemento.massaAtomica} <br>
+            Grupo: ${elemento.grupo}`;
    modal.style.display = "flex";
 }
 function fecharmodal () {
@@ -77,6 +80,8 @@ legenda.forEach(item => {
     bloco.appendChild(texto);
     conteudoLegenda.appendChild(bloco);
 });
+
+
 
    
  

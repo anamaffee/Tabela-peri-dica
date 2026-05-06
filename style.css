@@ -34,7 +34,7 @@
     position: fixed; 
     top: 180px; left: 430px; 
     width: 20%; 
-    height: 20%; 
+    height: 18%; 
     justify-content: center; 
     align-items: center;
     z-index: 1000;
@@ -58,3 +58,4 @@
     grid-template-columns: repeat(5, 1fr); 
     margin-left: 60px;
 }
+
