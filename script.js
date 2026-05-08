@@ -16,8 +16,9 @@ colecaoElementos.forEach((item) => {
     // add evento
     divElemento.onmouseenter = function () {
         abrirModal(item);
+        construirAtomo(item);
     };
-
+    
     const container = document.getElementById("tabela-periodica");
     container.appendChild(divElemento);
 
@@ -80,6 +81,9 @@ legenda.forEach(item => {
     bloco.appendChild(texto);
     conteudoLegenda.appendChild(bloco);
 });
+
+
+
 
 
 

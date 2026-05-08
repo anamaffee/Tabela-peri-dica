@@ -6,7 +6,6 @@
     position: flex;
     width: 200px;
     height: 200px;
-    /* Adiciona perspectiva 3D */
     perspective: 1000px; 
 }
 .nucleus {
@@ -28,20 +27,17 @@
     height: 100%;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.2);
-    /* Animação de rotação */
+    transform: translate(-50%, -50%);
     animation: rotateOrbit linear infinite;
 }
-
 .electron {
     position: absolute;
-    top: -10px;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: #00d2ff;
+    top: 0; left: 50%;
+    width: 10px; height: 10px;
+    background-color: #00ccff;
     border-radius: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 10px #00d2ff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #00ccff;
 }
 
 /* Velocidades diferentes para as órbitas */
@@ -53,3 +49,4 @@
     from { transform: rotateX(70deg) rotateY(0deg); }
     to { transform: rotateX(70deg) rotateY(360deg); }
 }
+
